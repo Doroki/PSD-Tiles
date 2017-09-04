@@ -1,0 +1,70 @@
+.navi {
+    &__menu {
+        display: grid;
+        grid-template-rows: repeat(7, 60px) 1fr;
+        grid-template-columns: 1fr auto;
+        align-items: stretch;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        grid-column: 1;
+        border-bottom: 0.5px solid $gray;
+        cursor: pointer;
+
+        &:hover, &:hover > .navi__icons  {
+            color: #FFF;
+            background-color: $secondary-font-color;
+        }
+
+        &:last-of-type {
+            position: relative;
+            z-index: 10;
+            box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+        }
+    }
+
+    &__icons {
+        margin: 0 10px;
+        font-size: 1.625em;
+        color: $gray;
+        
+        &--white {
+            color: white;
+        }
+    }
+
+    &__contact {
+        grid-column: 1;
+        align-self: stretch;
+        color: white;
+        background-color: $dark-gray;
+        line-height: 1.2em;
+    }
+
+    &__info {
+        align-self: stretch;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        padding-top: 1.5em;
+
+        &:first-of-type {
+            padding-top: 2.5em;
+        }
+    }
+
+    &__data {
+        margin-left: 15px;
+        font-size: $medium-font-size;
+    }
+}
+
+// .test {
+//     position: relative;
+//     width: 200px;
+//     // z-index: -10;
+//     background-color: #000;
+//     grid-column: 2;
+//     grid-row: 1 / 9;
+// }

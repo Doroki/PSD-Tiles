@@ -1,0 +1,49 @@
+.header {
+
+    &__social, &__icon, &__search {
+        display: grid;
+        align-items: stretch;
+        color: $third-font-color;
+        justify-items: stretch;
+        justify-self: stretch;
+    }
+    
+    &__icon  {
+        &--search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &:hover {
+            color: $secondary-font-color;
+        }
+    }
+
+    &__input {
+        &:focus {
+            display: block;
+        }
+    }
+
+    &__social-list {
+        justify-items: stretch;
+        border-left: 0.5px solid $third-font-color;
+        border-right: 0.5px solid $third-font-color;
+    }
+
+    &__link-social {
+        color: $third-font-color;
+
+        &--facebook:hover {
+            color: $facebook;
+        }
+
+        &--twitter:hover {
+            color: $twitter;
+        }
+
+        &--gplus:hover {
+            color: $google;
+        }
+    }    
+}

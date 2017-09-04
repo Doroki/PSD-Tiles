@@ -17,13 +17,22 @@
 /*=============================================
 =            LAYOUT            =
 =============================================*/
-
+@import "layout/_header.scss";
+@import "layout/_navi.scss";
+@import "layout/_slider.scss";
 /*=====  End of LAYOUT  ======*/
 
 
 /*=============================================
 =            COMPONENTS            =
 =============================================*/
+@import "components/_header-menu-button.scss";
+@import "components/_header-icons.scss";
+@import "components/_navi-menu.scss";
+@import "components/_navi-social.scss";
+@import "components/_navi-facebook.scss";
+@import "components/_navi-sign.scss";
+@import "components/_slider-components.scss";
 
 /*=====  End of COMPONENTS  ======*/
 

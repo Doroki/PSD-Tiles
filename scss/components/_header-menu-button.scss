@@ -1,0 +1,11 @@
+.header {
+    &__button {
+        width: 60px;
+        height: 60px;
+        border: none;
+        outline: none;
+        font-size: $big-font-size;
+        background-color: $secondary-font-color;
+        color: #fff;
+    }
+}

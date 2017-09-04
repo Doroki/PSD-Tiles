@@ -1,0 +1,44 @@
+.navi {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+
+    &__menu {
+        background-color: white;
+        grid-column: span 1;
+        grid-row: 1 / 5;
+        font-size: $normal-font-size;
+
+    }
+
+    &__social {
+        background-color: white;
+        grid-column: span 1;
+        grid-row: 1 / 3;   
+    }
+
+    &__facebook {
+        background-color: $facebook;
+        grid-column: span 1;
+        grid-row: 1 / 2;
+    }
+
+    &__twitter {
+        background-color: $twitter;
+        grid-column: span 1;
+        grid-row: 2 / 3;
+    }
+
+    &__sign {
+        background-color: white;
+        grid-column: span 2;
+        grid-row: 3 / 4;
+    }
+
+    &__newsletter {
+        background-color: white;
+        grid-column: span 2;
+        grid-row: 4 / 5;
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +11,163 @@
 </head>
 
 <body>
-
+	<!--  ======== HEADER ========	-->
 	<header class="header">
-
+		<button class="header__button icon-menu"></button>
+		<!--  MAIN MENU  -->
+		<nav class="header__menu">
+			<ul class="header__list">
+				<li class="header__item"><a href="#" class="header__link">Home</a></li>
+				<li class="header__item"><a href="#" class="header__link">Store</a></li>
+				<li class="header__item"><a href="#" class="header__link">Blog</a></li>
+				<li class="header__item"><a href="#" class="header__link">About</a></li>
+				<li class="header__item"><a href="#" class="header__link">Contact</a></li>
+			</ul>
+		</nav>
+		<!--  SEARCH ICON  -->
+		<form action="" class="header__search">
+			<label for="search" class="header__icon header__icon--search"></label>
+			<input id="search" name="search" type="search" class="header__input">
+		</form>
+		<!--  SOCIAL ICONS  -->
+		<div class="header__social">
+			<ul class="header__social-list">
+				<li class="header__icon"><a href="#" class="header__link-social header__link-social--facebook"></a></li>
+				<li class="header__icon"><a href="#" class="header__link-social header__link-social--twitter"></a></li>
+				<li class="header__icon"><a href="#" class="header__link-social header__link-social--gplus"></a></li>
+			</ul>
+		</div>
+		<!--  LOGIN ICON  -->
+		<span class="header__icon"><a href="" class="header__link-social icon-user"></a></span>
 	</header>
 
 	<main>
-		
+		<!--  ======== NAVI SECTION ========	-->
+		<section class="navi">
+			<!--  MENU  -->
+			<ul class="navi__menu">
+				<li class="navi__item"><i class="navi__icons icon-home"></i>Home</li>
+				<li class="navi__item"><i class="navi__icons icon-basket"></i>Store</li>
+				<li class="navi__item"><i class="navi__icons icon-edit"></i>Blog</li>
+				<li class="navi__item"><i class="navi__icons icon-group"></i>Community
+				</li>
+				<li class="navi__item"><i class="navi__icons icon-award"></i>Contests</li>
+				<li class="navi__item"><i class="navi__icons icon-info-circled"></i>About</li>
+				<li class="navi__item"><i class="navi__icons icon-mail-alt"></i>Contact</li>
+				<ol class="navi__contact">
+					<li class="navi__info"><i class="navi__icons navi__icons--white icon-phone"></i><span class="navi__data">(912) 555 1234 <br> (912) 555 5678</span></li>
+					<li class="navi__info"><i class="navi__icons navi__icons--white icon-location"></i><span class="navi__data">1600 Pennsylvania Ave NW, Washington DC 20500, USA</span></li>
+					<li class="navi__info"><i class="navi__icons navi__icons--white icon-mail-alt"></i><span class="navi__data">hello@website.com <br>office@website.com</span></li>
+				</ol>
+				<!-- <ol class="test">
+					<li class="test2">wwew</li>
+					<li class="test2">wrsff</li>
+					<li class="test2">dgdg</li>
+				</ol> -->
+			</ul>
+			<!--  SOCIAL ICONS  -->
+			<ul class="navi__social">
+				<li class="navi__socialItem"><a href="#" class="navi__link navi__link--facebook"><i class="navi__socialIcons icon-facebook-circled"></i>Facebook</a></li>
+				<li class="navi__socialItem"><a href="#" class="navi__link navi__link--twitter"><i class="navi__socialIcons icon-twitter-circled"></i>Twitter</a></li>
+				<li class="navi__socialItem"><a href="#" class="navi__link navi__link--google"><i class="navi__socialIcons icon-gplus-circled"></i>Google +</a></li>
+				<li class="navi__socialItem"><a href="#" class="navi__link navi__link--linked"><i class="navi__socialIcons icon-linkedin-circled"></i>LinkedIn</a></li>
+				<li class="navi__socialItem"><a href="#" class="navi__link navi__link--pinterest"><i class="navi__socialIcons icon-pinterest-circled"></i>Pinterest</a></li>
+			</ul>
+			<!--  FACEBOOK SECTION  -->
+			<div class="navi__facebook">
+				<i class="navi__large-icon icon-facebook"></i>
+				<p class="navi__counter">156K</p>
+				<label class="navi__follow">Follow<input type="checkbox" class="navi__check-icon navi__check-icon--unchecked"></label>
+			</div>
+			<!-- TWITTER SECTION  -->
+			<div class="navi__twitter">
+				<i class="navi__large-icon icon-twitter"></i>
+				<p class="navi__counter">89K</p>
+				<label class="navi__follow">Follow<input type="checkbox" class="navi__check-icon navi__check-icon--unchecked"></label>
+			</div>
+			<!-- SIGN SECTION  -->
+			<div class="navi__sign">
+				<h2 class="navi__header">Sign In</h2>
+				<p class="navi__content">Just select your favorite social network to get started</p>
+				<ul class="navi__sign-list">
+					<li><a href="#" class="navi__sign-icon navi__sign-icon--facebook"></a></li>
+					<li><a href="#" class="navi__sign-icon navi__sign-icon--twitter"></a></li>
+					<li><a href="#" class="navi__sign-icon navi__sign-icon--google"></a></li>
+					<li><a href="#" class="navi__sign-icon navi__sign-icon--linked"></a></li>
+				</ul>
+			</div>
+			<!-- NEWSLETTER SECTION  -->
+			<div class="navi__newsletter">
+				<h2 class="navi__header">Join the Newsletter</h2>
+				<p class="navi__content">Sign up for our personalized daily newsletter</p>
+				<form action="" class="navi__form">
+					<input type="text" placeholder="Enter email adress" class="navi__email">
+					<input type="submit" value="SIGN UP" class="navi__button">
+				</form>
+			</div>
+		</section>
+
+		<!-- ========= SLIDER SECTION ========== -->
+		<section class="slider">
+			<!-- slide 1  -->
+			<article class="slider__content slider__content--slide1">
+				<h2 class="slider__header">Featured Story</h2>
+				<p class="slider__text">
+					Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long
+					life on the market...</p>
+				<button class="slider__more">VIEW MORE</button>
+			</article>
+			<!-- slide 2  -->
+			<article class="slider__content slider__content--slide2 slider__content--hidden">
+				<h2 class="slider__header">Another Story</h2>
+				<p class="slider__text">
+					Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long
+					life on the market...</p>
+				<button class="slider__more">VIEW MORE</button>
+			</article>
+			<!-- slide 3  -->
+			<article class="slider__content slider__content--slide3 slider__content--hidden">
+				<h2 class="slider__header">Third Story</h2>
+				<p class="slider__text">
+					Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long
+					life on the market...</p>
+				<button class="slider__more">VIEW MORE</button>
+			</article>
+			<!-- slide 4  -->
+			<article class="slider__content slider__content--slide4 slider__content--hidden">
+				<h2 class="slider__header">Last Story</h2>
+				<p class="slider__text">
+					Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long
+					life on the market...</p>
+				<button class="slider__more">VIEW MORE</button>
+			</article>
+			<!-- dots / buttons  -->
+			<div class="slider__box">
+				<ul class="slider__list">
+					<li class="slider__dot slider__dot--actual"></li>
+					<li class="slider__dot"></li>
+					<li class="slider__dot"></li>
+					<li class="slider__dot"></li>
+				</ul>
+			</div>
+			<!-- previous slide  -->
+			<div class="slider__arrow-left">
+				<button class="slider__button slider__button--left-icon"></button>
+			</div>
+			<!-- next slide  -->
+			<div class="slider__arrow-right">
+				<button class="slider__button slider__button--right-icon"></button>
+			</div>
+		</section>
 	</main>
 
 	<footer class="footer">
-		
+
 	</footer>
-	
+
 	<!-- build:js js/scripts.min.js -->
 	<script src="js/script.js"></script>
 	<!-- endbuild -->
 </body>
+
 </html>

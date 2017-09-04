@@ -1,26 +1,20 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?2350227');
-  src: url('../font/fontello.eot?2350227#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?2350227') format('woff2'),
-       url('../font/fontello.woff?2350227') format('woff'),
-       url('../font/fontello.ttf?2350227') format('truetype'),
-       url('../font/fontello.svg?2350227#fontello') format('svg');
+  src: url('../img/fontello/font/fontello.eot?2350227');
+  src: url('../img/fontello/font/fontello.eot?2350227#iefix') format('embedded-opentype'),
+       url('../img/fontello/font/fontello.woff2?2350227') format('woff2'),
+       url('../img/fontello/font/fontello.woff?2350227') format('woff'),
+       url('../img/fontello/font/fontello.ttf?2350227') format('truetype'),
+       url('../img/fontello/font/fontello.svg?2350227#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?2350227#fontello') format('svg');
-  }
-}
-*/
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
+ [class^="icon-"]:before,
+ [class$="icon"]:before, 
+ [class*=" icon-"]:before, 
+ [class*="icon"]:before,
+ [class*="social"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -88,3 +82,16 @@
 .icon-pinterest-circled:before { content: '\f313'; } /* '' */
 .icon-linkedin-circled:before { content: '\f319'; } /* '' */
 .icon-stumbleupon-circled:before { content: '\f31f'; } /* '' */
+
+.header__icon--search:before { content: '\e800'; }
+.navi__sign-icon--twitter:before { content: '\f30a'; }
+.navi__sign-icon--facebook:before { content: '\f30d'; }
+.navi__sign-icon--google:before { content: '\f310'; }
+.navi__sign-icon--linked:before { content: '\f319'; }
+.navi__check-icon--unchecked:before { content: '\e802'; }
+.navi__check-icon--checked:before { content: '\e803'; }
+.header__link-social--twitter:before { content: '\f309'; }
+.header__link-social--facebook:before { content: '\f30c'; }
+.header__link-social--gplus:before { content: '\f30f'; }
+.slider__button--left-icon:before { content: '\e816'; }
+.slider__button--right-icon:before { content: '\e817'; }

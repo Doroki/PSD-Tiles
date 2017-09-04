@@ -1,0 +1,45 @@
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 60px 1fr 60px 135px 60px;
+    grid-template-rows: 60px;
+    align-items: stretch;
+    justify-items: start;
+    margin-bottom: 1em;
+
+    &__menu, &__item {
+        display: grid;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+
+    &__list {
+        margin-left: 2em;
+        display: grid;
+        align-items: stretch;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1em;
+    }
+
+    &__social-list {
+        display: grid;
+        grid-template-columns: repeat(3, 45px);
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__link, &__link-social {
+        text-decoration: none;
+        color: $main-font-color;
+        font-size: $normal-font-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            color: $secondary-font-color;
+        }
+    }
+}
