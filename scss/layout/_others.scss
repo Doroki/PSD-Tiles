@@ -1,0 +1,49 @@
+.others {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 3fr 67px 67px 2fr;
+    grid-template-areas: 
+        "social calendar view"
+        "social new new"
+        "info new new"
+        "info cite cite"
+        "contact cite cite"
+        "contact about about";
+    grid-gap: 1em;
+
+    &__social {
+        grid-area: social;
+        grid-row: 1 / 3;
+    }
+
+    &__info {
+        grid-area: info;
+        grid-row: 3 / 5;
+    }
+
+    &__contact {
+        grid-area: info;
+        grid-row: 5 / 7;
+    }
+
+    &__calendar {
+        grid-area: calendar;
+    }
+
+    &__view {
+        grid-area: view;
+    }
+
+    &__new {
+        grid-area: new;
+    }
+
+    &__cite {
+        grid-area: cite;
+    }
+
+    &__about {
+        grid-area: about;
+    }
+}

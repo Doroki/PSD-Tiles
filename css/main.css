@@ -60,9 +60,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #475055;
   padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.5em;
+  margin: 1.5em auto;
   font-size: 16px; }
 
 @font-face {
@@ -76,6 +74,7 @@ body {
 [class$="icon"]:before,
 [class*=" icon-"]:before,
 [class*="icon"]:before,
+[class*="img"]:before,
 [class*="social"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -286,6 +285,24 @@ body {
 .slider__button--right-icon:before {
   content: '\e817'; }
 
+.activ__img--blue:before {
+  content: '\e80f'; }
+
+.activ__img--red:before {
+  content: '\e80e'; }
+
+.activ__icon--share:before {
+  content: '\e810'; }
+
+.activ__icon--later:before {
+  content: '\e813'; }
+
+.activ__icon--love:before {
+  content: '\e814'; }
+
+.activ__icon--like:before {
+  content: '\e815'; }
+
 /*=============================================
 =            LAYOUT            =
 =============================================*/
@@ -415,6 +432,51 @@ body {
     grid-column: 1; }
   .slider__more {
     grid-column: 1; }
+
+.activ {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1em; }
+  .activ__story {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-color: #FFF; }
+  .activ__actions {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    background-color: #152840; }
+  .activ__instagram {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    background-color: #FFF; }
+
+.others {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr 3fr 67px 67px 2fr;
+  grid-template-areas: "social calendar view" "social new new" "info new new" "info cite cite" "contact cite cite" "contact about about";
+  grid-gap: 1em; }
+  .others__social {
+    grid-area: social;
+    grid-row: 1 / 3; }
+  .others__info {
+    grid-area: info;
+    grid-row: 3 / 5; }
+  .others__contact {
+    grid-area: info;
+    grid-row: 5 / 7; }
+  .others__calendar {
+    grid-area: calendar; }
+  .others__view {
+    grid-area: view; }
+  .others__new {
+    grid-area: new; }
+  .others__cite {
+    grid-area: cite; }
+  .others__about {
+    grid-area: about; }
 
 /*=====  End of LAYOUT  ======*/
 /*=============================================
@@ -736,5 +798,92 @@ body {
     cursor: pointer; }
     .slider__dot--actual {
       background-color: #FFF; }
+
+.activ {
+  /* activ article styles */
+  /* aciv icons */
+  /* aciv video */
+  /* aciv image */ }
+  .activ__story {
+    display: grid;
+    grid-template-columns: 40px 3fr 1fr 5fr; }
+  .activ__instagram {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 40px; }
+  .activ__img {
+    height: 40px;
+    width: 40px;
+    background-color: #ea6060;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.3em;
+    color: #FFF;
+    margin-top: 2em; }
+    .activ__img--red {
+      background-color: #ea6060; }
+    .activ__img--blue {
+      background-color: #56ccc8; }
+  .activ__article {
+    margin: 2.7em 1.1em; }
+  .activ__header {
+    font-size: 24px;
+    font-weight: 500;
+    color: #475055;
+    line-height: 1.2em;
+    margin-bottom: 0.3em; }
+  .activ__timer {
+    font-size: 14px; }
+  .activ__content {
+    font-size: 15px;
+    margin-top: 1.5em;
+    line-height: 1.6em; }
+  .activ__interaction {
+    background-color: #152840;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .activ__desc {
+    font-size: 0.5em;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    margin-top: 0.5em;
+    color: #FFF; }
+  .activ__icon {
+    font-size: 1.8em;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-decoration: none;
+    color: #FFF; }
+    .activ__icon--love {
+      margin-left: 1em;
+      color: #ea6060; }
+    .activ__icon:hover {
+      color: #ea6060; }
+  .activ__video {
+    width: 100%;
+    height: 100%; }
+  .activ__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .activ__photo {
+    width: 100%;
+    height: 100%;
+    grid-column: 3 / 5; }
 
 /*=====  End of COMPONENTS  ======*/

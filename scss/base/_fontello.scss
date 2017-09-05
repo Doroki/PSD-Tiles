@@ -14,6 +14,7 @@
  [class$="icon"]:before, 
  [class*=" icon-"]:before, 
  [class*="icon"]:before,
+ [class*="img"]:before,
  [class*="social"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -95,3 +96,9 @@
 .header__link-social--gplus:before { content: '\f30f'; }
 .slider__button--left-icon:before { content: '\e816'; }
 .slider__button--right-icon:before { content: '\e817'; }
+.activ__img--blue:before { content: '\e80f'; }
+.activ__img--red:before { content: '\e80e'; }
+.activ__icon--share:before { content: '\e810'; }
+.activ__icon--later:before { content: '\e813'; }
+.activ__icon--love:before { content: '\e814'; }
+.activ__icon--like:before { content: '\e815'; }

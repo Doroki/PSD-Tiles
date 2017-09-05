@@ -1,0 +1,25 @@
+.activ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+
+    &__story {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        background-color: #FFF;
+    }
+
+    &__actions {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        background-color: $dark-blue;
+    }
+
+    &__instagram {
+        grid-column: 2 / 4;
+        grid-row: 2;
+        background-color: #FFF;
+    }
+}
+
