@@ -1,11 +1,9 @@
-.navi {
-    &__sign, &__newsletter {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        align-items: start;
-        justify-items: center;
-        padding: 1em 2em;
-    }
+/*----------  navi sign and newsletter  ----------*/
+.sign, .newsletter {
+    @include grid-align($vertical:start, $horizontal:center);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    padding: 1em 2em;
 
     &__header {
         font-size: $big-font-size;
@@ -17,16 +15,14 @@
         font-weight: 300;
         
     }
-
-    &__sign-list {
+}
+.sign {
+    &__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 
-    &__sign-icon {
-        text-decoration: none;
-        font-size: 2em;
-
+    &__icon{
         &--facebook {
             color: $facebook;
         }
@@ -43,7 +39,9 @@
             color: $linked;
         }
     }
+}
 
+.newsletter {
     &__form {
         display: grid;
         grid-template-columns: 1fr 100px;
@@ -56,18 +54,13 @@
         font-size: 1.1em;
         padding: 8px 15px;
         color: $gray;
-    }
 
-    &__email::placeholder {
-        color: $gray;
-    }
+        &:focus {
+            border-color: $light-blue;
+        }
 
-    &__button {
-        border: 0;
-        outline: none;
-        color: #FFF;
-        background-color: $red;
-        border-radius: 8px;
-
+        &::placeholder {
+            color: $gray;
+        }
     }
 }

@@ -1,0 +1,123 @@
+/*---------- Main menu social icons ----------*/
+.social {
+    &__link {
+        text-decoration: none;
+        font-size: $normal-font-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $third-font-color;
+        cursor: pointer;
+
+        &:hover {
+            color: $secondary-font-color;
+        }
+
+        &--facebook:hover {
+            color: $facebook;
+        }
+
+        &--twitter:hover {
+            color: $twitter;
+        }
+
+        &--gplus:hover {
+            color: $google;
+        }
+    }
+}
+
+/*---------- Section navi menu decoration icons ----------*/
+.list {
+    &__icons {
+        margin: 0 10px;
+        font-size: 1.625em;
+        color: $gray;
+        
+        &--white {
+            color: white;
+        }
+    }
+
+    &__item:hover > .list__icons  {
+        color: #FFF;
+        background-color: $secondary-font-color;
+    }
+}
+
+/*----------  circled social icons  ----------*/
+.social-icon {
+    text-decoration: none;
+    font-size: 2em;
+    color: $gray;
+    margin-right: 0.5em;
+}
+
+
+/*----------  checkbox icons ----------*/
+.check-icon {
+    color: #FFF;
+    font-size: 1.3em;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+/*----------  Decoration article icons  ----------*/
+.article-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    color: #FFF;
+
+    &--camera {
+        background-color: $red;
+        margin-top: 2em;        
+    }
+
+    &--video {
+        background-color: $light-blue;
+        margin-top: 2em; 
+    }
+
+    &--note {
+        background-color: $secondary-font-color;
+        margin-top: 1em; 
+    }
+
+    &--quote {
+        background-color: $secondary-font-color;
+        margin-top: 1.5em; 
+    }
+}
+
+/*----------  Interactiv action icons (share, later, like, love)  ----------*/
+.action {
+    &__icon {
+        font-size: 1.8em;
+        align-self: center;
+        text-decoration: none;
+        color: #FFF;
+
+        &--love {
+            margin-left: 1em;
+            color: $red;
+        }
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &__desc {
+        font-size: 0.5em;
+        font-weight: 300;
+        display: block;
+        text-align: center;
+        margin-top: 0.5em;
+        color: #FFF;
+    }
+}

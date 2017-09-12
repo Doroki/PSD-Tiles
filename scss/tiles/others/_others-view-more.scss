@@ -1,0 +1,20 @@
+/*----------  view more tile  ----------*/
+.view {
+    @include grid-align($vertical:center, $horizontal:center);
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5em;
+    background-color: $red;
+    color: white;
+    align-content: center;
+
+    &:hover > &__icon {
+        transform: translateX(80%);
+        transition: transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+
+    &__icon {
+        transform: translateX(0%);
+        transition: transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+}

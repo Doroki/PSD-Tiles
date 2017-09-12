@@ -1,0 +1,8 @@
+/*----------  calendar tile  ----------*/
+.others {
+    &__calendar {
+        @include grid-align($vertical:center, $horizontal:center);
+        background-color: $dark-blue;
+        color: white;
+    }
+}

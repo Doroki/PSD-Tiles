@@ -1,0 +1,40 @@
+/*----------  twitter tile  ----------*/
+.twitter {
+    background-color: $twitter;
+    color: #FFF;
+    font-size: $normal-font-size;
+    font-weight: 100;
+    display: grid;
+
+    &__head-box {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+    &__bold {
+        font-weight: 500;
+
+        &--margin {
+            margin: 1em 1.5em;
+            grid-column: 1;
+        }
+    }
+
+    &__thin {
+        font-weight: 100;
+        margin-left: 0.5em;
+    }
+
+    &__content {
+        font-size: $medium-font-size;
+        line-height: 1.5em;
+        border-top: 0.5px solid #FFF;
+        padding: 1.5em;
+    }
+
+    &__note {
+        display: block;
+        margin-top: 1em;
+    }
+}

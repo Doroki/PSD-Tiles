@@ -1,0 +1,90 @@
+.about {
+    background-color: #FFF;
+    display: grid;
+    grid-template-rows: 45px 1fr;
+    align-items: stretch;
+    justify-content: stretch;
+
+    &__menu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $gray;
+        border-right: 1px solid $main-font-color;
+        color: #FFF;
+        cursor: pointer;
+
+        &:last-of-type {
+            border: none;
+        }
+
+        &:hover, &--active {
+            background-color: #FFF;
+            color: $main-font-color;
+        }
+    }
+
+    &__content {
+        padding: 2em;
+    }
+
+    &__articles {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        &--hidden {
+            display: none;
+        }
+    }
+    /////////////////////////////////
+    &__interview {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 46%;
+        height: 100%;
+    }
+
+    &__person {
+        display: flex;
+    }
+
+    &__photo {
+        height: 55px;
+        width: 55px;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 1em;
+        font-size: 1.15em;
+        font-weight: 500;
+    }
+
+    &__workplace {
+        display: flex;
+        font-size: $small-font-size;
+        font-weight: 300; 
+        color: $third-font-color;
+    }
+
+    &__text {
+        @include article-content;
+        margin-top: 0;
+    }
+
+    &__email {
+        text-decoration: none;
+        color: $secondary-font-color;
+        font-size: $medium-font-size;
+    }
+}

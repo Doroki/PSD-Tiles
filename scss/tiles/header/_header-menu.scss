@@ -1,0 +1,26 @@
+/*----------  header menu  ----------*/
+.main-menu {
+    @include grid-align($vertical:stretch, $horizontal:stretch);
+
+    &__list {
+        margin-left: 2em;
+        @include grid-align($vertical:stretch, $horizontal:stretch);
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1em;
+    }
+
+     &__item {
+        @include grid-align($vertical:stretch, $horizontal:stretch);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $main-font-color;
+        font-size: $normal-font-size;
+        @include flex-align($vertical: center, $horizontal: center);
+
+        &:hover {
+            color: $secondary-font-color;
+        }
+    }
+}

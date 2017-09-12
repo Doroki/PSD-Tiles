@@ -1,0 +1,53 @@
+.activ {
+    &__story {
+        display: grid;
+        grid-template-columns: 40px 3fr 1fr 5fr;
+    }
+
+    &__instagram {
+        display: grid;
+        grid-template-columns: 40px 1fr 1fr 40px;
+    }
+
+    &__article {
+        /* activ article styles */
+        margin: $article-margin;
+    }
+
+    &__header {
+        @include article-header;
+    }
+
+    &__timer {
+        font-size: 14px;
+    }
+
+    &__content {
+        @include article-content;
+    }
+
+    &__interaction {
+        /* aciv interaction icons */
+        background-color: $dark-blue;
+        display: grid;
+        justify-content: center;
+    }
+
+    &__video {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    &__actions-box {
+        /* share and love box */
+        background-color: $dark-blue;
+        @include flex-align($vertical: center, $horizontal: center);
+    }
+    
+    &__photo {
+        /* aciv image */
+        grid-column: 3 / 5;
+        background: url(../img/sport.jpg) no-repeat center;
+        background-size: cover;
+    }
+}

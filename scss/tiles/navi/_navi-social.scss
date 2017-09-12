@@ -1,0 +1,40 @@
+/*----------  navi social icons section  ----------*/
+.social-box {
+    @include grid-align($vertical:stretch, $horizontal:stretch);
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    align-content: space-around;
+
+    &__item {
+        @include grid-align($vertical:stretch, $horizontal:stretch);
+        padding-left: 10%;
+    }
+
+    &__link {
+        text-decoration: none;
+        @include flex-align;
+        font-size: $normal-font-size;
+        color: $main-font-color;
+        cursor: pointer;
+        
+        &--facebook:hover, &--facebook:hover > .social-icon {
+            color: $facebook;
+        }
+
+        &--twitter:hover, &--twitter:hover > .social-icon {
+            color: $twitter;
+        }
+
+        &--google:hover, &--google:hover > .social-icon {
+            color: $google;
+        }
+
+        &--linked:hover, &--linked:hover > .social-icon {
+            color: $linked;
+        }
+
+        &--pinterest:hover, &--pinterest:hover > .social-icon {
+            color: $pinterest;
+        }
+    }
+}

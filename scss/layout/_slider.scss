@@ -1,8 +1,10 @@
+/*----------  SLIDER SECTION  ----------*/
+
 .slider {
     display: grid;
     grid-template-columns: 34px 1fr 34px;
     grid-template-rows: 2fr 1fr;
-    background-color: #9C5F5F;
+    background-color: $dark-blue;
     margin: 1em 0;
     max-width: 928px;
     height: 453px;
@@ -51,11 +53,11 @@
 
     &__text {
         grid-column: 1;
-
     }
 
     &__more {
         grid-column: 1;
-    }
     /* ====== END OF grid in slider__content ======= */
+    }
+    
 }
