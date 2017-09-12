@@ -9,11 +9,21 @@
     grid-template-columns: 1fr auto;
     align-items: stretch;
 
+    @include queries(large) {
+        grid-template-columns: 1fr;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
     &__item {
         @include flex-align;
         grid-column: 1;
         border-bottom: 0.5px solid $gray;
         cursor: pointer;
+
+        @include queries(large) {
+            justify-content: center;
+        }
 
         &:hover  {
             color: #FFF;
@@ -40,6 +50,17 @@
         color: white;
         background-color: $dark-gray;
         line-height: 1.2em;
+
+        @media (max-width: 900px) and (min-width: 750px)  {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include queries(medium) {
+            display: grid;
+            text-align: center;
+            padding-bottom: 2em;    
+        }
     }
 
     &__info {
@@ -48,13 +69,26 @@
         grid-template-columns: 40px 1fr;
         padding-top: 1.5em;
 
+        @media (max-width: 900px) and (min-width: 750px) {
+            grid-template-columns: auto;
+            grid-template-rows: 40px 1fr;
+            justify-content: center;
+            justify-items: center;
+            padding-bottom: 1.5em;
+            text-align: center;
+        }
+
         &:first-of-type {
             padding-top: 2.5em;
+
+            @media (max-width: 900px) and (min-width: 750px)  {
+                padding-top: 1.5em;
+            }
         }
     }
 
     &__data {
-        margin-left: 15px;
+        margin: 0 15px;
         font-size: $medium-font-size;
     }
 }

@@ -35,6 +35,10 @@
     &__article {
         grid-area: article;
         margin: 1.2em 2em;
+
+        @include queries(mini) {
+            margin: 1em 1em;
+        }
     }
 
     &__header {
@@ -50,6 +54,14 @@
         margin-top: 8%;
         margin-right: 20%;
         justify-content: space-between;
+
+        @include queries(large) {
+           margin-right: 40px;
+        }
+
+        @include queries(mini) {
+            display: none;
+        }
     }
 
     &__link {

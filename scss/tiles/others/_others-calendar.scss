@@ -4,5 +4,9 @@
         @include grid-align($vertical:center, $horizontal:center);
         background-color: $dark-blue;
         color: white;
+
+        @include queries(medium) {
+            height: 300px;
+         }
     }
 }

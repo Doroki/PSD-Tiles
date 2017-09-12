@@ -19,6 +19,10 @@
         color: #FFF;
         cursor: pointer;
 
+        @include queries(mini) {
+            font-size: $small-font-size;
+        }
+
         &:last-of-type {
             border: none;
         }
@@ -38,6 +42,10 @@
         height: 100%;
         align-items: center;
         justify-content: space-between;
+       
+        @include queries(mini) {
+            flex-direction: column;
+        }
 
         &--hidden {
             display: none;
@@ -50,6 +58,16 @@
         justify-content: space-between;
         width: 46%;
         height: 100%;
+
+        @include queries(mini) {
+            width: 100%;
+            margin-top: 1em;
+            padding-bottom: 1em; 
+
+            &:first-child {
+                border-bottom: 1px solid $gray;
+            }
+        }
     }
 
     &__person {
@@ -80,6 +98,10 @@
     &__text {
         @include article-content;
         margin-top: 0;
+
+        @include queries(large) {
+            margin: 1em 0;
+        }
     }
 
     &__email {

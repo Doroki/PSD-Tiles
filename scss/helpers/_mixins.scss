@@ -10,6 +10,7 @@
     font-size: 15px;
     margin-top: 1.3em;
     line-height: 1.6em;
+    text-align: justify;
 }
 
 @mixin button-properties($color: false, $fontsize: false) { // button main properties
@@ -50,3 +51,18 @@
         justify-content: $horizontal;
     }
 }
+
+@mixin queries($size) {
+    @if $size == "large" {
+        @media (max-width: 900px) { @content; }
+    }
+    @else if $size == "medium" {
+        @media (max-width: 750px) { @content; }
+    }
+    @else if $size == "small" {
+        @media (max-width: 550px)  { @content; }
+    } 
+    @else if $size == "mini" {
+        @media (max-width: 450px)  { @content; }
+    }
+  }

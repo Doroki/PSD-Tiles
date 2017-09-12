@@ -23,4 +23,8 @@
             color: $secondary-font-color;
         }
     }
+
+    @include queries(large) {
+        display: none;    
+    }
 }

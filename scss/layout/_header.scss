@@ -8,6 +8,11 @@
     justify-items: start;
     margin-bottom: 1em;
 
+    @include queries(large) {
+        grid-template-columns: 60px 1fr;
+    }
+
+
     &__button {
         grid-column: 1;
     }
@@ -18,5 +23,9 @@
 
     &__social {
         grid-column: 3;
+
+        @include queries(large) {   
+         grid-column: 2;    
+        }
     }
 }

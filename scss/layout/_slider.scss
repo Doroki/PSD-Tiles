@@ -37,6 +37,10 @@
         align-self: stretch;
         justify-self: start;
         align-content: start;
+
+        @include queries(medium) { 
+            justify-self: end;
+        }
     
     /* ======= grid in slider__content ======= */
         display: grid;
@@ -45,6 +49,11 @@
         justify-items: start;
         align-items: start;
         padding: 2.2em 4em;
+
+        @include queries(medium) {
+            grid-template-columns: 1fr; 
+            justify-items: center;
+        }
     }
 
     &__header {

@@ -10,6 +10,11 @@
         display: grid;
         grid-template-columns: auto auto;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    &__check-icon {
+        margin-right: 1.5em;
     }
 
     &__bold {

@@ -5,9 +5,17 @@
     grid-template-rows: repeat(5, 50px);
     align-content: space-around;
 
+    @include queries(mini) {
+        justify-content: space-around;
+    }
+
     &__item {
         @include grid-align($vertical:stretch, $horizontal:stretch);
         padding-left: 10%;
+
+        @include queries(mini) {
+            padding-left: 0;
+        }
     }
 
     &__link {

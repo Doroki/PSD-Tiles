@@ -31,5 +31,9 @@
         color: $main-font-color;
         flex: 1;
         margin-bottom: 1em;
+
+        @include queries(large) {
+            min-height: 150px;
+        }
     }
 }

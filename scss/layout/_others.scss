@@ -13,19 +13,45 @@
         "contact about about";
     grid-gap: 1em;
 
+    @include queries(large) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+            "calendar view"
+            "twitter info"
+            "new new"
+            "quote quote"
+            "about about"
+            "contact contact ";
+    }
+
+    @include queries(small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+            "calendar" 
+            "view"
+            "twitter" 
+            "info"
+            "new"
+            "quote"
+            "about"
+            "contact";
+    }
+
     &__twitter {
         grid-area: twitter;
-        grid-row: 1 / 3;
+        // grid-row: 1 / 3;
     }
 
     &__info {
         grid-area: info;
-        grid-row: 3 / 5;
+        // grid-row: 3 / 5;
     }
 
     &__contact {
-        grid-area: info;
-        grid-row: 5 / 7;
+        grid-area: contact;
+        // grid-row: 5 / 7;
     }
 
     &__calendar {

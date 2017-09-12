@@ -1,9 +1,10 @@
 /*----------  navi sign and newsletter  ----------*/
 .sign, .newsletter {
     @include grid-align($vertical:start, $horizontal:center);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     justify-items: center;
-    padding: 1em 2em;
+    text-align: center;
+    padding: 1em 1em;
 
     &__header {
         font-size: $big-font-size;
@@ -13,6 +14,7 @@
     &__content {
         font-size: $normal-font-size;
         font-weight: 300;
+        margin: 1em 0;
         
     }
 }
@@ -44,9 +46,14 @@
 .newsletter {
     &__form {
         display: grid;
-        grid-template-columns: 1fr 100px;
+        grid-template-columns: 1fr auto;
         grid-gap: 1em;
         justify-self: stretch;
+        justify-items: center;
+
+        @include queries(mini) {
+            grid-template-columns: auto;
+        }
     }
 
     &__email {
@@ -54,6 +61,11 @@
         font-size: 1.1em;
         padding: 8px 15px;
         color: $gray;
+
+        @include queries(mini) {
+            // grid-template-columns: auto;
+            // grid-template-rows: auto auto;
+        }
 
         &:focus {
             border-color: $light-blue;
