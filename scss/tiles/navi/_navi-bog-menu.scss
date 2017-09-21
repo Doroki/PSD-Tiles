@@ -5,11 +5,9 @@
     position: relative;
     top: 0;
     grid-column: 2;
-    grid-row: 1 / 9;
     display: grid;
     align-items: stretch;
     overflow: hidden;
-
     width: 0px;
     transition: width 1s linear;
 
@@ -19,12 +17,17 @@
     }
 
     &--show {
-        width: 220px;
-        transition: width 1s linear;
+        width: 100%;
+        min-width: 220px;
+        transition: all 1s linear;
 
         @include queries(large) {
             grid-column: 2;
             grid-row: 1;
+        }
+
+        @include queries("mini") {
+            min-width: 0;
         }
     }
 

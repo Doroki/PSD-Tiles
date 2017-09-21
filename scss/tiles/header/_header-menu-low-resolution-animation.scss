@@ -1,0 +1,43 @@
+@include queries(large) {
+    .main-menu {
+        position: absolute;
+        overflow: hidden;
+        z-index: 1000;
+        top: 60px;
+        left: -60px;
+        width: calc(100% + 60px);
+        font-size: 2em;
+        background-color: rgba(61, 61, 61, 0.72);
+        @include grid-align($vertical: center, $horizontal:stretch);
+        border: 0px solid $secondary-font-color;
+        height: 0px;
+        transition: height 0.3s linear, border 0.3s linear;
+        
+        &--show {
+            height: calc(100vh - 99px);
+            border: 5px solid $secondary-font-color;
+            @include grid-align($vertical: center, $horizontal:stretch);
+            transition: all 0.3s linear;
+        }
+
+        &__item {
+            height: 100%;
+        }
+
+        &__list {
+            margin-left: 0;
+            grid-template-columns: 1fr;
+            background-color: #FFF;
+            width: 50%;
+            padding: 1em;
+            border-radius: 5px;
+            justify-self: center;
+        }
+    }
+
+    .header--sticky {
+        & > .main-menu--show {
+                height: calc(100vh - 60px);
+            }
+        }
+}

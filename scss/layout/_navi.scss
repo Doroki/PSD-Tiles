@@ -22,8 +22,8 @@
         grid-row: 1 / 5;
         font-size: $normal-font-size;
         display: grid;
-        background-color: $dark-gray;
-
+        background-color: transparent;
+        
         @include queries(large) {
             grid-column: 1 / 3;
             grid-row: 1;

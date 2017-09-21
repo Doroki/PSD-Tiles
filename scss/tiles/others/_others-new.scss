@@ -3,8 +3,7 @@
 .new {
     background-color: #FFF;
     display: grid;
-    grid-template-columns: 40px 1fr;
-    grid-template-rows: auto auto;
+    grid-auto-flow: column;
     grid-template-areas: "big-image big-image" 
                          "small-img article";
     position: relative;

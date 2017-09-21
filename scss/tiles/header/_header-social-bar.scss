@@ -33,24 +33,26 @@
 
     &__input {
         position: absolute;
-        display: flex;
+        display: block;
         bottom: 0;
         left: 0;
         transform: translateY(0%);
-        border: 5px solid $light-blue;
-        border-radius: 0 20px 20px 20px;
-        font-size: 1.3em;
-        padding: 1em;
-        height: 100%;
-        width: 100%;
+        width: 0;
+        height: 0;
         box-sizing: border-box;
         z-index: 100;
+        border: 5px solid $light-blue;
         background-color: #FFF;
         transition: width 0.2s linear, 
                     transform 0.3s linear 0.2s; 
 
         &:focus {
             width: 250px;
+            border-radius: 0 20px 20px 20px;
+            font-size: 1.3em;
+            padding: 1em;
+            height: 100%;
+            width: 200px;
             transform: translateY(100%);
             transition: transform 0.3s linear, 
                         width 0.2s linear 0.3s; 

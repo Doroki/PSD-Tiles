@@ -1,0 +1,33 @@
+/*----------  Loader animations  ----------*/
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background-color: $background-color;
+    color: $secondary-font-color;
+
+    &__icon {
+        position: relative;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:before {
+            font-size: 5em;
+            animation: rotation 1.3s linear infinite;
+        }
+    } 
+    
+    &__content {
+        font-size: 2.5em;
+        margin-top: 1em;
+    }
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

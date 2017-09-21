@@ -28,6 +28,19 @@
 
 /*=============================================
 =*****                                   *****=
+=*****         Animation elements        *****=
+=*****                                   *****=
+=============================================*/
+
+@import "animations/_animate-during-scroll.scss";
+@import "animations/_loader.scss";
+
+/*=============================================  
+=========   End of Animation elements =========
+=============================================*/
+
+/*=============================================
+=*****                                   *****=
 =*****              LAYOUT               *****=
 =*****                                   *****=
 =============================================*/
@@ -51,6 +64,7 @@
 =            Header Section            =
 ======================================*/
 @import "tiles/header/_header-menu.scss";
+@import "tiles/header/_header-menu-low-resolution-animation.scss";
 @import "tiles/header/_header-social-bar.scss";
 /*=====  End of Header Section  ======*/
 

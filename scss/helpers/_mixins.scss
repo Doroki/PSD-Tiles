@@ -63,6 +63,9 @@
         @media (max-width: 550px)  { @content; }
     } 
     @else if $size == "mini" {
-        @media (max-width: 450px)  { @content; }
+        @media (max-width: 460px)  { @content; }
+    } 
+    @else if $size == "400" {
+        @media (max-width: 400px)  { @content; }
     }
   }
