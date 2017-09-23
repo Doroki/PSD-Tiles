@@ -23,6 +23,7 @@
         font-size: $normal-font-size;
         display: grid;
         background-color: transparent;
+        grid-template-columns: 1fr auto;
         
         @include queries(large) {
             grid-column: 1 / 3;

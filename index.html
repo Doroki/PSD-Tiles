@@ -17,36 +17,46 @@
 		</div>
 	</div>
 	<!--  ======== HEADER ========	-->
-	<header id="header" class="header">
-		<button class="header__button"></button>
-		<!--  MAIN MENU  -->
-		<nav class="header__menu main-menu">
-			<ul class="main-menu__list">
-				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Home</a></li>
-				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Store</a></li>
-				<li class="main-menu__item"><a href="#" class="main-menu__link">Blog</a></li>
-				<li class="main-menu__item"><a href="#" class="main-menu__link">About</a></li>
-				<li class="main-menu__item"><a href="#" class="main-menu__link">Contact</a></li>
-			</ul>
-		</nav>
-		<!--  SEARCH ICON  -->
-		<div class="header__social social">
-			<form action="" class="social__icon">
-				<label for="search" class="social__link social__link--search">
-					<input id="search" name="search" type="search" class="social__input">
-				</label>
-			</form>
-			<!--  SOCIAL ICONS  -->
-			<ul class="social__list">
-				<li class="social__icon"><a href="#" class="social__link social__link--facebook"></a></li>
-				<li class="social__icon"><a href="#" class="social__link social__link--twitter"></a></li>
-				<li class="social__icon"><a href="#" class="social__link social__link--gplus"></a></li>
-			</ul>
-			<!--  LOGIN ICON  -->
-			<span class="social__icon"><a href="#" class="social__link social__link--user"></a></span>
-		</div>
+	<header id="head" class="header">
+		<section id="header" class="header__navigation">
+			<button class="header__button"></button>
+			<!--  MAIN MENU  -->
+			<nav id="menu" class="header__menu main-menu">
+				<ul class="main-menu__list">
+					<li class="main-menu__item">
+						<a href="#head" class="main-menu__link">Home</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#slider" class="main-menu__link">Story</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#activ" class="main-menu__link">Blog</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#about" class="main-menu__link">About</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#contact" class="main-menu__link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<!--  SEARCH ICON  -->
+			<div class="header__social social">
+				<form action="" class="social__icon">
+					<label for="search" class="social__link social__link--search">
+						<input id="search" name="search" type="search" class="social__input">
+					</label>
+				</form>
+				<!--  SOCIAL ICONS  -->
+				<ul class="social__list">
+					<li class="social__icon"><a href="#" class="social__link social__link--facebook"></a></li>
+					<li class="social__icon"><a href="#" class="social__link social__link--twitter"></a></li>
+					<li class="social__icon"><a href="#" class="social__link social__link--gplus"></a></li>
+				</ul>
+				<!--  LOGIN ICON  -->
+				<span class="social__icon"><a href="#" class="social__link social__link--user"></a></span>
+			</div>
+		</section>
 	</header>
 
 	<main id="main">
@@ -57,36 +67,36 @@
 				<ul class="navi__list list">
 					<li class="list__item">
 						<i class="list__icons list__icons--home"></i>
-						<span>Home</span>
+						<span class="list__content">Home</span>
 					</li>
 					<li class="list__item">
 						<i class="list__icons list__icons--basket"></i>
-						<span>Store</span>
+						<span class="list__content">Store</span>
 					</li>
 					<li id="blog" class="list__item list__item--icon">
 						<i class="list__icons list__icons--edit"></i>
-						<span>Blog</span>
+						<span class="list__content">Blog</span>
 					</li>
 					<li class="list__item">
 						<i class="list__icons list__icons--group"></i>
-						<span>Community</span>
+						<span class="list__content">Community</span>
 					</li>
 					<li class="list__item">
 						<i class="list__icons list__icons--award"></i>
-						<span>Contests</span>
+						<span class="list__content">Contests</span>
 					</li>
 					<li class="list__item">
 						<i class="list__icons list__icons--info-circled"></i>
-						<span>About</span>
+						<span class="list__content">About</span>
 					</li>
 					<li class="list__item">
 						<i class="list__icons list__icons--mail-alt"></i>
-						<span>Contact</span>
+						<span class="list__content">Contact</span>
 					</li>
 					<li class="list__item">
 						<ol class="list__contact">
 							<li class="list__info"><i class="list__icons list__icons--white list__icons--phone"></i><span class="list__data">(912) 555 1234 <br> (912) 555 5678</span></li>
-							<li class="list__info"><i class="list__icons list__icons--white list__icons--location"></i><span class="list__data">1600 Pennsylvania Ave NW, Washington DC 20500, USA</span></li>
+							<li class="list__info"><i class="list__icons list__icons--white list__icons--location"></i><span class="list__data">1600 Pennsylvania Ave NW,<br> Washington DC 20500, USA</span></li>
 							<li class="list__info"><i class="list__icons list__icons--white list__icons--mail-alt"></i><span class="list__data">hello@website.com <br>office@website.com</span></li>
 						</ol>
 					</li>
@@ -307,7 +317,7 @@
 				</article>
 			</article>
 			<!-- WHAT'S HOT TILE -->
-			<aside class="others__info info">
+			<aside id="blog" class="others__info info">
 				<div class="info__head-box">
 					<h3 class="info__header">What`s Hot</h3>
 					<!-- dots / buttons  -->
@@ -366,7 +376,7 @@
 				</div>
 			</aside>
 			<!-- CONTACT FORM TILE -->
-			<div class="others__contact contact">
+			<div id="contact" class="others__contact contact">
 				<h3 class="contact__header">Ask a Question</h3>
 				<form action="" class="contact__form">
 					<input type="text" class="contact__name" placeholder="Your name">
@@ -383,7 +393,7 @@
 				</p>
 			</backquote>
 			<!-- ABOUT SECTION -->
-			<section class="others__about about">
+			<section id="about" class="others__about about">
 				<ul class="about__menu">
 					<li class="about__item">About</li>
 					<li class="about__item about__item--active">Team</li>
@@ -393,12 +403,13 @@
 				</ul>
 				<div class="about__content">
 					<article class="about__articles about__articles--hidden">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ea sit maxime explicabo, at architecto odio et labore,
-						aut reiciendis fugit? Assumenda, iusto! Explicabo deleniti molestias delectus nulla magnam fuga in dolorem officiis
-						dolore temporibus recusandae hic quos asperiores cum quidem neque officia quibusdam ullam reprehenderit qui, aperiam,
-						distinctio repellendus. Molestias omnis eius alias ut quibusdam distinctio quos ad beatae maxime dolor, quidem quas
-						consequatur suscipit. Delectus deleniti necessitatibus voluptate iusto aspernatur, officiis sint dolorum laudantium
-						accusantium esse possimus distinctio!</article>
+						<p class="about__dummy">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ea sit maxime explicabo, at architecto odio et labore,
+							aut reiciendis fugit? Assumenda, iusto! Explicabo deleniti molestias delectus nulla magnam fuga in dolorem officiis
+							dolore temporibus recusandae hic quos asperiores cum quidem neque officia quibusdam ullam reprehenderit qui, aperiam,
+							distinctio repellendus.
+						</p>
+					</article>
 					<article class="about__articles">
 						<!-- First Person -->
 						<div class="about__interview">
@@ -429,12 +440,26 @@
 							<a href="#" class="about__email">@kateupton</a>
 						</div>
 					</article>
-					<article class="about__articles about__articles--hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquam numquam minus nobis iste aut. Distinctio laudantium
-						nihil at quos quas iste delectus cupiditate. Et ullam pariatur sint impedit nam? Vitae cupiditate architecto iure minima,
-						delectus, obcaecati atque at quam sed odio quis, quibusdam qui dolore. Nostrum labore dolore iure.</article>
-					<article class="about__articles about__articles--hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed atque quos vel earum eveniet id cumque magnam illum
-						animi ea debitis accusantium iure, sit laudantium voluptate temporibus veniam? Harum!</article>
-					<article class="about__articles about__articles--hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nemo!</article>
+					<article class="about__articles about__articles--hidden">
+						<p class="about__dummy">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquam numquam minus nobis iste aut. Distinctio laudantium nihil
+							at quos quas iste delectus cupiditate. Et ullam pariatur sint impedit nam? Vitae cupiditate architecto iure minima,
+							delectus, obcaecati atque at quam sed odio quis, quibusdam qui dolore. Nostrum labore dolore iure.
+						</p>
+					</article>
+					<article class="about__articles about__articles--hidden">
+						<p class="about__dummy">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed atque quos vel earum eveniet id cumque magnam illum animi
+							ea debitis accusantium iure, sit laudantium voluptate temporibus veniam? Harum!
+						</p>
+					</article>
+					<article class="about__articles about__articles--hidden">
+						<ol class="about__contact">
+							<li class="about__info"><i class="list__icons--phone"></i><span>(912) 555 1234 <br> (912) 555 5678</span></li>
+							<li class="about__info"><i class="list__icons--location"></i><span>1600 Pennsylvania Ave NW,<br> Washington DC 20500, USA</span></li>
+							<li class="about__info"><i class="list__icons--mail-alt"></i><span>hello@website.com <br>office@website.com</span></li>
+						</ol>
+					</article>
 				</div>
 			</section>
 		</section>
@@ -443,6 +468,7 @@
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<!-- build:js js/scripts.min.js -->
 	<script src="js/script.js"></script>
+	<script src="js/scroll.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/animate-tiles.js"></script>
 	<script src="js/loader.js"></script>

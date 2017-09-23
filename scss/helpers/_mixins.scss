@@ -61,7 +61,10 @@
     }
     @else if $size == "small" {
         @media (max-width: 550px)  { @content; }
-    } 
+    }
+    @else if $size == "500" {
+        @media (max-width: 500px)  { @content; }
+    }
     @else if $size == "mini" {
         @media (max-width: 460px)  { @content; }
     } 

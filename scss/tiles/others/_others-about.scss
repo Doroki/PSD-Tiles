@@ -105,4 +105,23 @@
         color: $secondary-font-color;
         font-size: $medium-font-size;
     }
+
+    &__contact {
+        display: grid;
+        justify-content: center;
+        grid-gap: 1em;
+    }
+
+    &__info {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 1em;
+        justify-content: start;
+    }
+
+    &__dummy {
+        padding: 0 10%;
+        line-height: 1.2em;
+        word-spacing: 0.3em; 
+    }
 }

@@ -45,13 +45,16 @@ $(function(){
 //////////////
 
     $("#blog").on("click", function(){
-        $("#blog-menu").toggleClass("blog--show");
-        hideForSmallMobile();
+        
+        if($("#blog-menu").hasClass("blog--show")) {
+            $("#blog-menu").animate({"width": "0px"}, 700)
+            $("#blog-menu").removeClass("blog--show");
+            $(".list__content").removeClass("list__content--hidden");
+        } else {
+            $("#blog-menu").animate({"width": "220px"}, 700)
+            $("#blog-menu").addClass("blog--show");
+            $(".list__content").addClass("list__content--hidden");
+        }
     });
 
-    function hideForSmallMobile() {
-        $(".list__item").find("span").toggleClass("hidden");
-        $(".list__item").last().toggleClass("hidden");
-        $(".blog__item").not(":first-child").toggleClass("hidden");
-    }
 });
