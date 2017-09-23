@@ -16,27 +16,27 @@ var gulp = require("gulp"),
 =============================================*/
 
 gulp.task("css", function(){
-    return gulp.src("scss/main.scss")
+    return gulp.src("src/scss/main.scss")
         .pipe(plumber())
         .pipe(sass.sync())
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
-        .pipe(gulp.dest("css/"))
+        .pipe(gulp.dest("src/css/"))
         .pipe(browserSync.stream());
 });
 
 
 gulp.task("browser-sync", function() {
     browserSync.init({
-        server: "./"
+        server: "src/"
     });
 });
 
 
 gulp.task("watch", function(){
-    gulp.watch("scss/**/*.scss", ["css"]);
-    gulp.watch(["*.html", "js/*.js"], browserSync.reload);
+    gulp.watch("src/scss/**/*.scss", ["css"]);
+    gulp.watch(["src/*.html", "src/**/*.js"], browserSync.reload);
 });
 
 
@@ -57,7 +57,7 @@ gulp.task("clean", function(){
 
 
 gulp.task("concat", function () {
-    return gulp.src("*.html")
+    return gulp.src("src/*.html")
         .pipe(useref())
         .pipe( gulpif ("*.js", uglify()))
         .pipe(gulp.dest("dist/"));
@@ -65,14 +65,16 @@ gulp.task("concat", function () {
 
 
 gulp.task("imagemin", function(){
-    return gulp.src('dist/img/*')
+    return gulp.src('dist/img/*', {
+            base: 'dist'
+        })
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
 });
 
 
 gulp.task("copy", function(){
-    return gulp.src(["css/**/*.css", "img/*"], {
+    return gulp.src(["src/css/**/*.css", "src/img/*", "src/fontello/*"], {
         base: "src"
     })
     .pipe(gulp.dest("dist/"));

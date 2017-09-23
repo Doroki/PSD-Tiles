@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tiles-PSD</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+	<div id="loader" class="loader">
+		<div id="content" class="loader__icon">
+			<p class="loader__content">WELCOME</p>
+		</div>
+	</div>
+	<!--  ======== HEADER ========	-->
+	<header id="head" class="header">
+		<section id="header" class="header__navigation">
+			<button class="header__button"></button>
+			<!--  MAIN MENU  -->
+			<nav id="menu" class="header__menu main-menu">
+				<ul class="main-menu__list">
+					<li class="main-menu__item">
+						<a href="#head" class="main-menu__link">Home</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#slider" class="main-menu__link">Story</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#activ" class="main-menu__link">Blog</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#about" class="main-menu__link">About</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#contact" class="main-menu__link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<!--  SEARCH ICON  -->
+			<div class="header__social social">
+				<form action="" class="social__icon">
+					<label for="search" class="social__link social__link--search">
+						<input id="search" name="search" type="search" class="social__input">
+					</label>
+				</form>
+				<!--  SOCIAL ICONS  -->
+				<ul class="social__list">
+					<li class="social__icon"><a href="#" class="social__link social__link--facebook"></a></li>
+					<li class="social__icon"><a href="#" class="social__link social__link--twitter"></a></li>
+					<li class="social__icon"><a href="#" class="social__link social__link--gplus"></a></li>
+				</ul>
+				<!--  LOGIN ICON  -->
+				<span class="social__icon"><a href="#" class="social__link social__link--user"></a></span>
+			</div>
+		</section>
+	</header>
+
+	<main id="main">
+		<!--  ======== NAVI SECTION ========	-->
+		<section id="navi" class="navi">
+			<!--  MENU  -->
+			<div id="navi-menu" class="navi__menu">
+				<ul class="navi__list list">
+					<li class="list__item">
+						<i class="list__icons list__icons--home"></i>
+						<span class="list__content">Home</span>
+					</li>
+					<li class="list__item">
+						<i class="list__icons list__icons--basket"></i>
+						<span class="list__content">Store</span>
+					</li>
+					<li id="blog" class="list__item list__item--icon">
+						<i class="list__icons list__icons--edit"></i>
+						<span class="list__content">Blog</span>
+					</li>
+					<li class="list__item">
+						<i class="list__icons list__icons--group"></i>
+						<span class="list__content">Community</span>
+					</li>
+					<li class="list__item">
+						<i class="list__icons list__icons--award"></i>
+						<span class="list__content">Contests</span>
+					</li>
+					<li class="list__item">
+						<i class="list__icons list__icons--info-circled"></i>
+						<span class="list__content">About</span>
+					</li>
+					<li class="list__item">
+						<i class="list__icons list__icons--mail-alt"></i>
+						<span class="list__content">Contact</span>
+					</li>
+					<li class="list__item">
+						<ol class="list__contact">
+							<li class="list__info"><i class="list__icons list__icons--white list__icons--phone"></i><span class="list__data">(912) 555 1234 <br> (912) 555 5678</span></li>
+							<li class="list__info"><i class="list__icons list__icons--white list__icons--location"></i><span class="list__data">1600 Pennsylvania Ave NW,<br> Washington DC 20500, USA</span></li>
+							<li class="list__info"><i class="list__icons list__icons--white list__icons--mail-alt"></i><span class="list__data">hello@website.com <br>office@website.com</span></li>
+						</ol>
+					</li>
+				</ul>
+				<ul id="blog-menu" class="navi__blog blog">
+					<li class="blog__section">
+						<ul class="blog__list">
+							<li class="blog__item"><a href="#" class="blog__link blog__link--header blog__link--icon">Tech</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Software & Apps</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Gadgets</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Mobile</a></li>
+						</ul>
+					</li>
+					<li class="blog__section">
+						<ul class="blog__list">
+							<li class="blog__item"><a href="#" class="blog__link blog__link--header blog__link--icon">Entertainment</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Film</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Gaming</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Music</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Sport</a></li>
+						</ul>
+					</li>
+					<li class="blog__section">
+						<ul class="blog__list">
+							<li class="blog__item"><a href="#" class="blog__link blog__link--header blog__link--icon">Business</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Jobs</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Marketing</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Media</a></li>
+						</ul>
+					</li>
+					<li class="blog__section">
+						<ul class="blog__list">
+							<li class="blog__item"><a href="#" class="blog__link blog__link--header blog__link--icon">Lifestyle</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Home</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Health & Fitness</a></li>
+							<li class="blog__item"><a href="#" class="blog__link">Travel & Leisure</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--  SOCIAL ICONS  -->
+			<ul class="navi__social social-box">
+				<li class="social-box__item"><a href="#" class="social-box__link social-box__link--facebook"><i class="social-icon social-icon--facebook"></i>Facebook</a></li>
+				<li class="social-box__item"><a href="#" class="social-box__link social-box__link--twitter"><i class="social-icon social-icon--twitter"></i>Twitter</a></li>
+				<li class="social-box__item"><a href="#" class="social-box__link social-box__link--google"><i class="social-icon social-icon--google"></i>Google +</a></li>
+				<li class="social-box__item"><a href="#" class="social-box__link social-box__link--linked"><i class="social-icon social-icon--linked"></i>LinkedIn</a></li>
+				<li class="social-box__item"><a href="#" class="social-box__link social-box__link--pinterest"><i class="social-icon social-icon--pintrest"></i>Pinterest</a></li>
+			</ul>
+			<!--  FACEBOOK SECTION  -->
+			<div class="navi__facebook">
+				<i class="navi__large-icon navi__large-icon--facebook"></i>
+				<p class="navi__counter">156K</p>
+				<label class="navi__follow">Follow
+					<input type="checkbox" class="check-icon check-icon--unchecked">
+				</label>
+			</div>
+			<!-- TWITTER SECTION  -->
+			<div class="navi__twitter">
+				<i class="navi__large-icon navi__large-icon--twitter"></i>
+				<p class="navi__counter">89K</p>
+				<label class="navi__follow">Follow
+					<input type="checkbox" class="check-icon check-icon--unchecked">
+				</label>
+			</div>
+			<!-- SIGN SECTION  -->
+			<div class="navi__sign sign">
+				<h2 class="sign__header">Sign In</h2>
+				<p class="sign__content">Just select your favorite social network to get started</p>
+				<ul class="sign__list">
+					<li><a href="#" class="sign__icon--facebook social-icon social-icon--facebook"></a></li>
+					<li><a href="#" class="sign__icon--twitter social-icon social-icon--twitter"></a></li>
+					<li><a href="#" class="sign__icon--google social-icon social-icon--google"></a></li>
+					<li><a href="#" class="sign__icon--linked social-icon social-icon--linked"></a></li>
+				</ul>
+			</div>
+			<!-- NEWSLETTER SECTION  -->
+			<div class="navi__newsletter newsletter">
+				<h2 class="newsletter__header">Join the Newsletter</h2>
+				<p class="newsletter__content">Sign up for our personalized daily newsletter</p>
+				<form action="" class="newsletter__form">
+					<input type="text" placeholder="Enter email adress" class="newsletter__email">
+					<input type="submit" value="SIGN UP" class="submit-button">
+				</form>
+			</div>
+		</section>
+
+		<!-- ========= SLIDER SECTION ========== -->
+		<section id="slider" class="slider">
+			<!-- slide 1  -->
+			<article class="slider__content slider__content--slide1 slider__content--hidden">
+				<h2 class="slider__header">Featured Story</h2>
+				<p class="slider__text">
+					Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long
+					life on the market...</p>
+				<button class="slider__more">VIEW MORE</button>
+			</article>
+			<!-- slide 2  -->
+			<article class="slider__content slider__content--slide2 slider__content--hidden">
+				<h2 class="slider__header">Another Story</h2>
+				<p class="slider__text">
+					Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long
+					life on the market...</p>
+				<button class="slider__more">VIEW MORE</button>
+			</article>
+			<!-- slide 3  -->
+			<article class="slider__content slider__content--slide3 slider__content--hidden">
+				<h2 class="slider__header">Third Story</h2>
+				<p class="slider__text">
+					Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long
+					life on the market...</p>
+				<button class="slider__more">VIEW MORE</button>
+			</article>
+			<!-- slide 4  -->
+			<article class="slider__content slider__content--slide4 slider__content--hidden">
+				<h2 class="slider__header">Last Story</h2>
+				<p class="slider__text">
+					Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long
+					life on the market...</p>
+				<button class="slider__more">VIEW MORE</button>
+			</article>
+			<!-- dots / buttons  -->
+			<div class="slider__box">
+				<ul id="dot-container" class="slider__list">
+					<li class="dot dot--actual"></li>
+					<li class="dot"></li>
+					<li class="dot"></li>
+					<li class="dot"></li>
+				</ul>
+			</div>
+			<!-- previous slide  -->
+			<div class="slider__arrow-left">
+				<button id="preview" class="slider__button slider__button--left"></button>
+			</div>
+			<!-- next slide  -->
+			<div class="slider__arrow-right">
+				<button id="next" class="slider__button slider__button--right"></button>
+			</div>
+		</section>
+
+		<!-- ========= SECTION ACTIV ========== -->
+		<section id="activ" class="activ">
+			<div class="activ__story">
+				<span class="article-icon article-icon--camera"></span>
+				<article class="activ__article">
+					<h3 class="activ__header">Best story you have ever heard</h3>
+					<span class="activ__timer">24 minutes ago</span>
+					<p class="activ__content">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s
+						<span class="activ__content activ__content--hidden">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Doloribus eius repellendus porro perspiciatis culpa laborum?
+						</span>
+						<span id="ellipsis">...</span><button class="button-more">Read more</button>
+					</p>
+				</article>
+				<div class="activ__interaction">
+					<a href="#" class="action__icon action__icon--like"><span class="action__desc">Like</span></a>
+					<a href="#" class="action__icon action__icon--later"><span class="action__desc">Later</span></a>
+					<a href="#" class="action__icon action__icon--share"><span class="action__desc">Share</span></a>
+				</div>
+				<iframe class="activ__video" src="https://www.youtube.com/embed/HiZXABMNCUY">
+				</iframe>
+			</div>
+			<div class="activ__actions-box">
+				<a href="#" class="action__icon action__icon--share"><span class="action__desc">1,325</span></a>
+				<a href="#" class="action__icon action__icon--love"><span class="action__desc">682</span></a>
+			</div>
+			<section class="activ__instagram">
+				<span class="article-icon article-icon--video"></span>
+				<article class="activ__article">
+					<h3 class="activ__header">Here's What Instagram Ads Will Look Like</h3>
+					<span class="activ__timer">3 hours ago</span>
+					<p class="activ__content">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						<span class="activ__content activ__content--hidden">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Doloribus eius repellendus porro perspiciatis culpa laborum?
+						</span>
+						<span id="ellipsis">...</span><button class="button-more">Read more</button>
+					</p>
+				</article>
+				<div class="activ__photo"></div>
+			</section>
+		</section>
+
+		<!-- ========= OTHERS SECTION ========== -->
+		<section id="others" class="others">
+			<!-- TWITTER TILE -->
+			<aside class="others__twitter twitter">
+				<div class="twitter__head-box">
+					<h3 class="twitter__bold twitter__bold--margin">Alex White<span class="twitter__thin">@alexwhite</span></h3>
+					<label class="twitter__check-icon"><input type="checkbox" class="check-icon check-icon--unchecked"></label>
+				</div>
+				<p class="twitter__content">
+					Singolo is a free PSD template of a flat, single page website created <span class="twitter__bold"> by @PsdChat #freebie #psd http://bit.ly/19XM8Lj</span>
+					<span class="others__note">2 hours ago</span>
+				</p>
+				<p class="twitter__content">
+					Saturday Career Workshops are back at ADC! See what high school students created this week: <span class="twitter__bold">http://bit.ly/Xx1EsL</span>
+					<span class="twitter__note">6 hours ago</span>
+				</p>
+			</aside>
+			<!-- CALENDAR TILE -->
+			<div class="others__calendar">
+				<p>Calendar</p>
+			</div>
+			<!-- VIEW MORE TILE -->
+			<div class="others__view view">
+				<p>VIEW</p>
+				<p>MORE</p>
+				<p>STORIES</p>
+				<span class="view__icon"></span>
+			</div>
+			<!-- NEW TILE -->
+			<article class="others__new new">
+				<img src="./img/new.jpg" alt="" class="new__image">
+				<span class="article-icon article-icon--note"></span>
+				<article class="new__article">
+					<h3 class="new__header">What is Lorem Ipsum?</h3>
+					<p class="new__content">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+						text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						<span class="new__content new__content--hidden">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Porro perspiciatis culpa laborum?
+						</span>
+						<span class="ellipsis">...</span><button class="button-more">Read more</button>
+					</p>
+					<div class="new__action">
+						<a href="" class="new__link new__link--share-icon">569 Shares</a>
+						<a href="" class="new__link new__link--views-icon">3,152 Views</a>
+						<a href="" class="new__link new__link--comment-icon">21 Comments</a>
+					</div>
+				</article>
+			</article>
+			<!-- WHAT'S HOT TILE -->
+			<aside id="blog" class="others__info info">
+				<div class="info__head-box">
+					<h3 class="info__header">What`s Hot</h3>
+					<!-- dots / buttons  -->
+					<ul class="info__dot-list">
+						<li class="dot dot--dark dot--dark--actual"></li>
+						<li class="dot dot--dark"></li>
+						<li class="dot dot--dark"></li>
+					</ul>
+				</div>
+				<div class="info__container">
+					<section class="info__content">
+						<a href="#" class="info__link">
+							<img src="./img/manhattan.jpg" alt="" class="info__image">
+							<p class="info__article info__article--first">
+								A New Yorker doesn't necessarily come from...
+								<span class="info__timer">3 minutes ago</span>
+							</p>
+						</a>
+					</section>
+					<section class="info__content">
+						<a href="#" class="info__link">
+							<img src="./img/skyline.jpg" alt="" class="info__image">
+							<p class="info__article info__article--second">
+								A New Yorker never looks up...
+								<span class="info__timer">7 hours ago</span>
+							</p>
+						</a>
+					</section>
+					<section class="info__content">
+						<a href="#" class="info__link">
+							<img src="./img/cab.jpg" alt="" class="info__image">
+							<p class="info__article info__article--third">
+								A New Yorker doesn’t take cabs
+								<span class="info__timer">23 hours ago</span>
+							</p>
+						</a>
+					</section>
+					<section class="info__content">
+						<a href="#" class="info__link">	
+							<img src="./img/broadway.jpg" alt="" class="info__image">
+							<p class="info__article info__article--fourth">
+								A New Yorker views celebrities as regular...
+								<span class="info__timer">1 day ago</span>
+							</p>
+						</a>
+					</section>
+					<section class="info__content">
+						<a href="#" class="info__link">
+							<img src="./img/statue.jpg" alt="" class="info__image">
+							<p class="info__article info__article--fifth">
+								A New Yorker never looks up...
+								<span class="info__timer">2 days ago</span>
+							</p>
+						</a>
+					</section>
+				</div>
+			</aside>
+			<!-- CONTACT FORM TILE -->
+			<div id="contact" class="others__contact contact">
+				<h3 class="contact__header">Ask a Question</h3>
+				<form action="" class="contact__form">
+					<input type="text" class="contact__name" placeholder="Your name">
+					<input type="text" class="contact__email" placeholder="Your email">
+					<textarea name="" id="" class="contact__question" placeholder="Your question..."></textarea>
+					<input type="submit" value="SUBMIT" class="submit-button">
+				</form>
+			</div>
+			<!-- CITE TILE -->
+			<backquote class="others__quote quote">
+				<span class="article-icon article-icon--quote"></span>
+				<p class="quote__cite">
+					“If you don’t like something change it. If you can’t change it, change the way you think about it ”
+				</p>
+			</backquote>
+			<!-- ABOUT SECTION -->
+			<section id="about" class="others__about about">
+				<ul class="about__menu">
+					<li class="about__item">About</li>
+					<li class="about__item about__item--active">Team</li>
+					<li class="about__item">Privacy</li>
+					<li class="about__item">Advertise</li>
+					<li class="about__item">Contact</li>
+				</ul>
+				<div class="about__content">
+					<article class="about__articles about__articles--hidden">
+						<p class="about__dummy">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ea sit maxime explicabo, at architecto odio et labore,
+							aut reiciendis fugit? Assumenda, iusto! Explicabo deleniti molestias delectus nulla magnam fuga in dolorem officiis
+							dolore temporibus recusandae hic quos asperiores cum quidem neque officia quibusdam ullam reprehenderit qui, aperiam,
+							distinctio repellendus.
+						</p>
+					</article>
+					<article class="about__articles">
+						<!-- First Person -->
+						<div class="about__interview">
+							<div class="about__person">
+								<img src="./img/anne.jpg" alt="" class="about__photo">
+								<p class="about__name">
+									Anne Hathaway
+									<span class="about__workplace">CEO/Founder</span>
+								</p>
+							</div>
+							<p class="about__text">
+								“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...”
+							</p>
+							<a href="#" class="about__email">@annehathaway</a>
+						</div>
+						<!-- Second Person -->
+						<div class="about__interview">
+							<div class="about__person">
+								<img src="./img/kate.jpg" alt="" class="about__photo">
+								<p class="about__name">
+									Kate Upton
+									<span class="about__workplace">Co-Founder</span>
+								</p>
+							</div>
+							<p class="about__text">
+								“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...”
+							</p>
+							<a href="#" class="about__email">@kateupton</a>
+						</div>
+					</article>
+					<article class="about__articles about__articles--hidden">
+						<p class="about__dummy">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquam numquam minus nobis iste aut. Distinctio laudantium nihil
+							at quos quas iste delectus cupiditate. Et ullam pariatur sint impedit nam? Vitae cupiditate architecto iure minima,
+							delectus, obcaecati atque at quam sed odio quis, quibusdam qui dolore. Nostrum labore dolore iure.
+						</p>
+					</article>
+					<article class="about__articles about__articles--hidden">
+						<p class="about__dummy">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed atque quos vel earum eveniet id cumque magnam illum animi
+							ea debitis accusantium iure, sit laudantium voluptate temporibus veniam? Harum!
+						</p>
+					</article>
+					<article class="about__articles about__articles--hidden">
+						<ol class="about__contact">
+							<li class="about__info"><i class="list__icons--phone"></i><span>(912) 555 1234 <br> (912) 555 5678</span></li>
+							<li class="about__info"><i class="list__icons--location"></i><span>1600 Pennsylvania Ave NW,<br> Washington DC 20500, USA</span></li>
+							<li class="about__info"><i class="list__icons--mail-alt"></i><span>hello@website.com <br>office@website.com</span></li>
+						</ol>
+					</article>
+				</div>
+			</section>
+		</section>
+	</main>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="js/animate-tiles.min.js"></script>
+</body>
+
+</html>

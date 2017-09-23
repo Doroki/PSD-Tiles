@@ -1,0 +1,37 @@
+/*----------  header menu  ----------*/
+.main-menu {
+    @include grid-align($vertical:stretch, $horizontal:stretch);
+
+    &__list {
+        margin-left: 2em;
+        @include grid-align($vertical:stretch, $horizontal:stretch);
+        grid-auto-flow: column;
+        grid-gap: 1em;
+
+        @include queries(large) {
+            margin-left: 0;
+            grid-auto-flow: row;
+            background-color: #FFF;
+            width: 50%;
+            min-width: 285px;
+            padding: 1em;
+            border-radius: 5px;
+            justify-self: center;
+        }
+    }
+
+     &__item {
+        @include grid-align($vertical:stretch, $horizontal:stretch);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $main-font-color;
+        font-size: $normal-font-size;
+        @include flex-align($vertical: center, $horizontal: center);
+
+        &:hover {
+            color: $secondary-font-color;
+        }
+    }
+}
