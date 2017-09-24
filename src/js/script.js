@@ -1,21 +1,19 @@
 $(function(){
 
+ // ==== Main menu - show ==== //
     $(".header__button").on("click", function(){ // show menu
         $(".main-menu").toggleClass("main-menu--show");
     })
-
-///////////////////////////////
-
-    function checkSocial(e){ // animate social checkbox 
+    
+    
+// ==== switch social checkbox icons ==== //
+    $(".check-icon").on("change", function(e){ 
         $(this).toggleClass("check-icon--unchecked");
         $(this).toggleClass("check-icon--checked");
     }
 
-    $(".check-icon").on("change", checkSocial);
-
-
-/////////////////////////////
-    $(".dot--dark").on("click", function(e){ //info section dots
+// ==== Section info - dot buttons ==== //
+    $(".dot--dark").on("click", function(e){
         if(!($(e.target).hasClass("dot--dark--actual"))) {
             $(".dot--dark").removeClass("dot--dark--actual");
             $(e.target).addClass("dot--dark--actual");
@@ -30,8 +28,9 @@ $(function(){
             $(".info__container").html(newInfoContent);
         }
     });
-/////////////
-    $(".about__item").on("click", function(e){ //about section tabs
+    
+// ==== Section about switch tabs ==== //
+    $(".about__item").on("click", function(e){
         var buttonIndex = $(".about__item").index(e.target);
         
         if(!($(e.target).hasClass("about__item--active"))) {
@@ -42,8 +41,8 @@ $(function(){
             $(".about__articles").eq(buttonIndex).fadeIn("slow");
         }
     });
-//////////////
 
+// ==== Animate slide blog menu ==== //
     $("#blog").on("click", function(){
         
         if($("#blog-menu").hasClass("blog--show")) {
@@ -57,7 +56,8 @@ $(function(){
         }
     });
 
-//////////
+    
+// ==== "Read more/less" button ==== //
     $(".button-more").on("click", function(){
 
         if($(this).text() === "Read more") {
