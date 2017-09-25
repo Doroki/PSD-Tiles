@@ -387,6 +387,10 @@ body {
   color: #FFF;
   background-color: #56ccc8; }
 
+.list__item--selected > .list__icons {
+  color: #FFF;
+  background-color: #56ccc8; }
+
 /*----------  circled social icons  ----------*/
 .social-icon {
   text-decoration: none;
@@ -806,7 +810,11 @@ body {
           align-items: stretch;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
-          justify-content: stretch; }
+          justify-content: stretch;
+  width: 70%;
+  overflow: hidden;
+  -webkit-transition: width 0.3s linear;
+  transition: width 0.3s linear; }
   .main-menu__list {
     margin-left: 2em;
     display: grid;
@@ -851,6 +859,18 @@ body {
             justify-content: center; }
     .main-menu__link:hover {
       color: #56ccc8; }
+  .main-menu--show {
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    width: 10px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
 
 @media (max-width: 900px) {
   .main-menu {
@@ -898,10 +918,11 @@ body {
   .header--sticky > .main-menu--show {
     height: calc(100vh - 60px); } }
 
-@media (min-width: 500px) and (orientation: landscape) {
+@media (max-height: 450px) and (orientation: landscape) {
   .main-menu__list {
     grid-auto-flow: column;
-    width: 95%; } }
+    width: 95%;
+    font-size: 0.8em; } }
 
 /*----------  header icons  ----------*/
 .social {
@@ -1036,6 +1057,9 @@ body {
       color: #56ccc8;
       position: absolute;
       right: 10px; }
+    .list__item--selected {
+      color: #FFF;
+      background-color: #56ccc8; }
   .list__contact {
     grid-column: 1;
     display: grid;
