@@ -44,6 +44,11 @@
         color: #FFF;
         background-color: $secondary-font-color;
     }
+
+    &__item--selected > .list__icons  {
+        color: #FFF;
+        background-color: $secondary-font-color;
+    }
 }
 
 /*----------  circled social icons  ----------*/

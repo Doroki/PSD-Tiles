@@ -1,6 +1,9 @@
 /*----------  header menu  ----------*/
 .main-menu {
     @include grid-align($vertical:stretch, $horizontal:stretch);
+    width: 70%;
+    overflow: hidden;
+    transition: width 0.3s linear;
 
     &__list {
         margin-left: 2em;
@@ -33,5 +36,12 @@
         &:hover {
             color: $secondary-font-color;
         }
+    }
+
+    &--show {
+        @include grid-align($vertical: center, $horizontal:stretch);
+        width: 10px;
+        overflow: hidden;
+        transition: all 0.3s linear;
     }
 }

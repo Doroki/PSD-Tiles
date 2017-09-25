@@ -2,9 +2,14 @@ $(function(){
 
     var focused;
 
+    $("#search").on("click", function(e){
+        e.stopPropagation();
+    });
+
     $(".social__link--search").on("click", function(e){
         e.preventDefault();
 
+        console.log("jest");
         if(focused){
             $("#search").blur();
             focused = false;

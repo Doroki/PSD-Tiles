@@ -55,6 +55,11 @@
             position: absolute;
             right: 10px;
         }
+
+        &--selected {
+            color: #FFF;
+            background-color: $secondary-font-color; 
+        }
     }
 
     &__contact {

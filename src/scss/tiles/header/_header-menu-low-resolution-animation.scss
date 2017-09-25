@@ -42,11 +42,12 @@
         }
 }
 
-@media (min-width: 500px) and (orientation: landscape) {
+@media (max-height: 450px) and (orientation: landscape) {
     .main-menu {
         &__list {
             grid-auto-flow: column;
             width: 95%;
+            font-size: 0.8em;
         }
     }    
 }

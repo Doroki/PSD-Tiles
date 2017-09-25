@@ -50,10 +50,12 @@ $(function(){
             $("#blog-menu").animate({"width": "0px"}, 700)
             $("#blog-menu").removeClass("blog--show");
             $(".list__content").removeClass("list__content--hidden");
+            $(this).removeClass("list__item--selected");
         } else {
             $("#blog-menu").animate({"width": "220px"}, 700)
             $("#blog-menu").addClass("blog--show");
             $(".list__content").addClass("list__content--hidden");
+            $(this).addClass("list__item--selected");
         }
     });
 
