@@ -10,7 +10,7 @@ $(function(){
     $(".check-icon").on("change", function(e){ 
         $(this).toggleClass("check-icon--unchecked");
         $(this).toggleClass("check-icon--checked");
-    }
+    });
 
 // ==== Section info - dot buttons ==== //
     $(".dot--dark").on("click", function(e){
