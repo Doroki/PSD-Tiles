@@ -14,7 +14,7 @@
     }
 
     @include queries("mini") {
-        grid-column: 1;
+        grid-column: 1 / 3;
         min-width: 0;
         width: 100%;
     }
