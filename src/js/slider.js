@@ -3,11 +3,14 @@ $(document).ready(function(){
     var timer;
 
     function sliderAnimation(){
-        slideNumber++;        
+        slideNumber++;   
 
-        if(slideNumber >= 5) slideNumber = 1;
-        else if(slideNumber <= 0) slideNumber = 5;
-
+        if(slideNumber >= 5) { 
+            slideNumber = 1;
+        } else if(slideNumber < 1) {
+            slideNumber = 4;
+        }
+        
         $(".slider__content").addClass("slider__content--hidden");
         $(".slider__content--slide"+slideNumber).removeClass("slider__content--hidden");
         
@@ -34,7 +37,7 @@ $(document).ready(function(){
     }
 
     function previewSlide() {
-        slideNumber = slideNumber-2;
+        slideNumber = slideNumber-2; 
         clearTimeout(timer);
         sliderAnimation();
     }
